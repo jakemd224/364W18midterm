@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<form action="/partySelect" method="POST">
+    {{ form.username.label() }}{{ form.username() }}<br>
+    {{ form.password.label() }}{{ form.password() }}<br>
+    {{ form.submit() }}
+</form>
+
+{% endblock %}

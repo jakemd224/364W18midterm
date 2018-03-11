@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<ul>
+{% for p in pokemon %}
+    <li>Name: {{p.name}}, Pokedex ID: {{p.idNumber}}</li>
+{% endfor %}
+</ul>
+
+{% endblock %}

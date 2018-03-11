@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<form action="/party" method="GET">
+    {{ form.party.label() }}{{ form.party() }}<br>
+    {{ form.submit() }}
+</form>
+
+{% endblock %}

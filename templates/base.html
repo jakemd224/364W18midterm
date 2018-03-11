@@ -1,0 +1,16 @@
+<h3>Description</h3>
+
+This application is designed to allow users to create and edit 5 different parties (teams) of Pokemon.<br>
+Pokemon may not be reused so that each party is entirely unique.
+
+<h3>Navigation</h3>
+<ul>
+    <li><a href="{{ url_for('home')}}">Go to username input form.</a></li>
+    <li><a href="{{ url_for('see_all_pokemon')}}">See all Pokemon that have ever been added.</a></li>
+    <li><a href="{{ url_for('see_all_users')}}">See all users that have used this web app.</a></li>
+</ul>
+<p>------------------------------------------------------------------------------------------------------------------------</p>
+
+<h3>Current Page</h3>
+{% block content %}
+{% endblock %}
