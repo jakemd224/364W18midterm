@@ -7,4 +7,9 @@
 {% endfor %}
 </ul>
 
+{% for message in get_flashed_messages() %}
+    <strong>{{ message }}</strong>
+{% endfor %}
+</div>
+
 {% endblock %}

@@ -140,6 +140,7 @@ def home():
                     poke = Pokemon.query.filter_by(name=name.lower()).first()
                     if poke:
                         temp = True
+                        flash("Pokemon has already been added to a party.")
                         return redirect(url_for('see_all_pokemon'))
                     else:
                         poke = Pokemon(partyID=p.partyID, idNumber=data["id"], name=name.lower(), nickname=nickname)
@@ -151,8 +152,8 @@ def home():
                 errors2.append("Pokemon not found in database")
     errors = [v for v in form.errors.values()] #Taken from past assignment
     errors3 = errors + errors2
-    if len(errors2) > 0:
-        flash("!!! ERRORS PRESENT - " + str(errors2))
+    if len(errors3) > 0:
+        flash("!!! ERRORS PRESENT - " + str(errors3))
     return render_template('index.html', form = form)
 
 @app.route('/battle')
