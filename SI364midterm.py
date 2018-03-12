@@ -19,7 +19,7 @@ app.use_reloader = True
 CsrfProtect(app)
 ## All app.config values
 app.config['SECRET_KEY'] = 'Token keeps saying missing idk what else to try'
-app.config["SQLALCHEMY_DATABASE_URI"] = "postgresql:///jakedegmidterm"
+app.config["SQLALCHEMY_DATABASE_URI"] = "postgresql:///jakedeg364midterm"
 app.config['SQLALCHEMY_COMMIT_ON_TEARDOWN'] = True
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
