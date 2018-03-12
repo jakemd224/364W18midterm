@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<ul>
+{% for b in battles %}
+    <li>Winner: {{b.winnerUser}} with Party {{b.winnerParty}}</li>
+    <li>Loser:  {{b.loserUser}} with Party {{b.loserParty}}</li>
+    <br>
+{% endfor %}
+</ul>
+
+{% endblock %}

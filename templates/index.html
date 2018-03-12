@@ -2,10 +2,19 @@
 
 {% block content %}
 
-<form action="/partySelect" method="POST">
+<form method="POST">
+    {{ form.hidden_tag() }}
     {{ form.username.label() }}{{ form.username() }}<br>
-    {{ form.password.label() }}{{ form.password() }}<br>
+    {{ form.party.label() }}{{ form.party() }}<br>
+    {{ form.name.label() }}{{ form.name() }}<br>
+    {{ form.nickname.label() }}{{ form.nickname() }}<br>
     {{ form.submit() }}
 </form>
+
+<div>
+{% for message in get_flashed_messages() %}
+    <strong>{{ message }}</strong>
+{% endfor %}
+</div>
 
 {% endblock %}

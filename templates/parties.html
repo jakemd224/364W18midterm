@@ -1,10 +1,21 @@
 {% extends 'base.html' %}
 
 {% block content %}
-
-<form action="/party" method="GET">
-    {{ form.party.label() }}{{ form.party() }}<br>
-    {{ form.submit() }}
-</form>
+<ul>
+{% for u in users %}
+    <li>Name: {{u.username}}</li>
+    {% for p in parties %}
+        {% if p.userID == u.userID %}<br>
+            <li>Party: {{p.name}}</li>
+            {% for po in pokemon %}
+                {% if p.partyID == po.partyID %}
+                    <li>{{po.name}} named {{po.nickname}}</li>
+                {% endif %}
+            {% endfor %}
+        {% endif %}
+    {% endfor %}
+    <br><br><br>
+{% endfor %}
+</ul>
 
 {% endblock %}

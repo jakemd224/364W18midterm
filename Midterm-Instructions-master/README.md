@@ -73,13 +73,13 @@ Design will not earn you points for this assignment thoug you may certainly incl
 - [x] Add navigation in `base.html` with links (using `a href` tags) that lead to every other viewable page in the application. (e.g. in the lecture examples from the Feb 9 lecture, [like this](https://www.dropbox.com/s/hjcls4cfdkqwy84/Screenshot%202018-02-15%2013.26.32.png?dl=0) )
 - [x] Ensure that all templates in the application inherit (using template inheritance, with `extends`) from `base.html` and include at least one additional `block`.
 - [x] Include at least 2 additional template `.html` files we did not provide.
-- [ ] At least one additional template with a Jinja template for loop and at least one additional template with a Jinja template conditional.
+- [x] At least one additional template with a Jinja template for loop and at least one additional template with a Jinja template conditional.
     - These could be in the same template, and could be 1 of the 2 additional template files.
 - [x] At least one errorhandler for a 404 error and a corresponding template.
-- [ ] At least one request to a REST API that is based on data submitted in a WTForm.
+- [x] At least one request to a REST API that is based on data submitted in a WTForm.
 - [x] At least one additional (not provided) WTForm that sends data with a `GET` request to a new page.
 - [x] At least one additional (not provided) WTForm that sends data with a `POST` request to the *same* page.
-- [ ] At least one custom validator for a field in a WTForm.
+- [x] At least one custom validator for a field in a WTForm.
 - [x] At least 2 additional model classes.
 - [x] Have a one:many relationship that works properly built between 2 of your models.
 - [x] Successfully save data to each table.
@@ -91,7 +91,7 @@ Design will not earn you points for this assignment thoug you may certainly incl
 
 ### Additional Requirements for an additional 200 points (to reach 100%) -- an app with extra functionality!
 
-* (100 points) Include an *additional* model class (to make at least 4 total in the application) with at least 3 columns. Save data to it AND query data from it; use the data you query in a view-function, and as a result of querying that data, something should show up in a view. (The data itself should show up, OR the result of a request made with the data should show up.)
+*x(100 points) Include an *additional* model class (to make at least 4 total in the application) with at least 3 columns. Save data to it AND query data from it; use the data you query in a view-function, and as a result of querying that data, something should show up in a view. (The data itself should show up, OR the result of a request made with the data should show up.)
 
 *x(100 points) Write code in your Python file that will allow a user to submit duplicate data to a form, but will *not* save duplicate data (like the same user should not be able to submit the exact same tweet text for HW3).
 

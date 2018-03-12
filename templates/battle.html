@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<form action=/battleGet method="GET">
+    {{ form.hidden_tag() }}
+    {{ form.winnerUser.label() }}{{ form.winnerUser() }}<br>
+    {{ form.winnerParty.label() }}{{ form.winnerParty() }}<br>
+    {{ form.loserUser.label() }}{{ form.loserUser() }}<br>
+    {{ form.loserParty.label() }}{{ form.loserParty() }}<br>
+    {{ form.submit() }}
+</form>
+
+<div>
+{% for message in get_flashed_messages() %}
+    <strong>{{ message }}</strong>
+{% endfor %}
+</div>
+
+{% endblock %}

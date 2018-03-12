@@ -3,7 +3,7 @@
 {% block content %}
 <ul>
 {% for p in pokemon %}
-    <li>Name: {{p.name}}, Pokedex ID: {{p.idNumber}}</li>
+    <li>{{p.name}} nicknamed {{p.nickname}}, Pokedex ID: {{p.idNumber}}</li>
 {% endfor %}
 </ul>
 
